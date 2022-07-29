@@ -1,12 +1,575 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3rd Assignment</title>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Assignment-3</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/214f7c8c08.js" crossorigin="anonymous"></script>
+    </head>
 <body>
-    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <h1>E-School</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active mx-3" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="#">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="#">Deals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="#">Success</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="#">Register</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+
+                        <a href="#" class="btn btn-outline-success">Register</a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <section class="my-3">
+            <div class="container">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item rounded active position-relative" style="height: 90vh;">
+
+                            <div class="overlay">
+                                <div class="banner-text text-center position-absolute top-50 start-50 translate-middle">
+                                    <h3 class="h1 ">Get Started Digital
+                                        Learning</h3>
+                                    <p>It is a long established fact that a reader will be distracted by the readable
+                                        content of a page when looking at its layout.</p>
+                                    <div class="btn bg-primary text-center text-white">Get started</div>
+                                </div>
+
+                                <img src="images/cover/cover-1.png" class="img-fluid w-100" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-item rounded position-relative" style="height: 90vh;">
+                            <div class="overlay">
+                                <div class="banner-text text-center position-absolute top-50 start-50 translate-middle">
+                                    <h3 class="h1">Check Our New Courses</h3>
+                                    <p>It is a long established fact that a reader will be distracted by the readable
+                                        content of a page when looking at its layout.</p>
+                                    <div class="btn bg-primary text-center text-white">Get started</div>
+                                </div>
+                                <img src="images/cover/cover-2.jpg" class="img-fluid w-100" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-item rounded position-relative" style="height: 90vh;">
+                            <div class="overlay">
+                                <div class="banner-text text-center position-absolute top-50 start-50 translate-middle">
+                                    <h3>Stay Connected Digitally</h3>
+                                    <p>It is a long established fact that a reader will be distracted by the readable
+                                        content of a page when looking at its layout.</p>
+                                    <div class="btn bg-primary text-center text-white">Get started</div>
+                                </div>
+                                <img src="images/cover/cover-3.jpg" class="img-fluid w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="my-5">
+            <div class="container">
+                <div class="population-text col-lg-5 col-md-8 m-auto text-center pb-5 pt-sm-3">
+                    <h2 class="fw-bold mx-lg-5 mx-sm-0">Discover Our Popular
+                        Courses</h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable
+                        content of a page when looking at its layout.</p>
+
+                </div>
+
+                <div class="row g-3 ">
+                    <div class="col-lg-6 ">
+                        <div class="courses-item d-flex shadow-lg rounded flex-lg-row flex-md-row  flex-column mt-lg-0 ">
+                            <div class="cours-img col-lg-4 col-md-3 col-sm-12 col-12 ">
+                                <img src="images/course/course-1.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="courses-text d-flex justify-content-center flex-column">
+                                <h3 class="h4 mt-lg-0 mt-3">Fundamental Of UI/UX Design</h3>
+                                <small class="my-sm-3">Some quick example text to build on the card title
+                                    and make up the bulk of the card.</small>
+                                <p class="text-info text-capitalize">price : 20$</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 ">
+                        <div class="courses-item d-flex shadow-lg rounded flex-lg-row flex-md-row flex-column mt-lg-0">
+                            <div class="cours-img col-lg-4">
+                                <img src="images/course/course-2.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="courses-text d-flex justify-content-center flex-column">
+                                <h3 class="h4 mt-lg-0 mt-3">Javascript Basic to advanced</h3>
+                                <small class="my-sm-3">Some quick example text to build on the card title
+                                    and make up the bulk of the card.</small>
+                                <p class="text-info text-capitalize">price : 20$</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 ">
+                        <div class="courses-item d-flex shadow-lg rounded flex-lg-row flex-md-row flex-column mt-lg-0">
+                            <div class="cours-img col-lg-4">
+                                <img src="images/course/course-3.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="courses-text d-flex justify-content-center flex-column">
+                                <h3 class="h4 mt-lg-0 mt-3">Fullstack Web Development</h3>
+                                <small class="my-sm-3">Some quick example text to build on the card title
+                                    and make up the bulk of the card.</small>
+                                <p class="text-info text-capitalize">price : 20$</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 ">
+                        <div class="courses-item d-flex shadow-lg rounded flex-lg-row flex-md-row flex-column mt-lg-0">
+                            <div class="cours-img col-lg-4">
+                                <img src="images/course/course-4.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="courses-text d-flex justify-content-center flex-column">
+                                <h3 class="h4 mt-lg-0 mt-3">Digital Marketing</h3>
+                                <small class="my-sm-3">Some quick example text to build on the card title
+                                    and make up the bulk of the card.</small>
+                                <p class="text-info text-capitalize">price : 20$</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 ">
+                        <div class="courses-item d-flex shadow-lg rounded flex-lg-row flex-md-row flex-column mt-lg-0">
+                            <div class="cours-img col-lg-4">
+                                <img src="images/course/course-5.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="courses-text d-flex justify-content-center flex-column">
+                                <h3 class="h4 mt-lg-0 mt-3">Photography Basic Rules</h3>
+                                <small class="my-sm-3">Some quick example text to build on the card title
+                                    and make up the bulk of the card.</small>
+                                <p class="text-info text-capitalize">price : 20$</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 ">
+                        <div class="courses-item d-flex shadow-lg rounded flex-lg-row flex-md-row flex-column mt-lg-0">
+                            <div class="cours-img col-lg-4">
+                                <img src="images/course/course-6.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="courses-text d-flex justify-content-center flex-column">
+                                <h3 class="h4 mt-lg-0 mt-3">Motion Graphics</h3>
+                                <small class="my-sm-3">Some quick example text to build on the card title
+                                    and make up the bulk of the card.</small>
+                                <p class="text-info text-capitalize">price : 20$</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="button-part text-center mt-5">
+                    <div class="btn btn-primary text-white ">See More courses</div>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="my-5 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 bg-light">
+                        <div class="explore-img d-flex mb-3 mb-lg-0 mb-md-0">
+                            <img src="images/working.png" class="img-fluid w-100 " alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-7 bg-light">
+                        <div class="explore-text mt-lg-0 mt-md-3 d-flex justify-content-center flex-column">
+                            <h2 class=" mb-3 mt-lg-0">Explore The elearning
+                                Institute</h2>
+                            <p class="over-pro">There are many variations of passages of Lorem Ipsum available, but the
+                                majority have suffered alteration in some form, by injected humour, or
+                                randomised words which don't look even sl.</p>
+                           
+                            <div
+                                class="ex-count my-3 my-md-0 d-flex justify-content-lg-start justify-content-md-start
+                                justify-content-center">
+                                <div class="ex-inner-count col-3 col-md-3 ">
+                                    <h1>3.5k+</h1>
+                                    <p>Online Cours</p>
+                                </div>
+                                <div class="ex-inner-count col-3">
+                                    <h1>600+</h1>
+                                    <p>Expert member</p>
+                                </div>
+                                <div class="ex-inner-count col-3">
+                                    <h1>1k</h1>
+                                    <p>Rating & revew</p>
+                                </div>
+                            </div>
+                            <div class="ex-btn mt-3 mt-md-0">
+                                <a href="#" class="btn btn-primary"> Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-5 pb-5">
+            <div class="container bg-primary rounded">
+                <div class="row py-5">
+                    <div
+                        class="ready-main d-flex ; flex-lg-row flex-column  justify-content-around align-items-center text-lg-start text-center  ">
+                        <div class="ready-part text-white col-lg-6 col-md-7">
+                            <h2 class="my-3">Ready To Join?</h2>
+                            <p class="lh-sm">It is a long established fact that a reader will be distracted by the
+                                readable content of a page when looking at its layout.</p>
+                        </div>
+                        <div class="register-btn col-lg-4 col-md-3 text-center">
+                            <a href="modal.html" class="btn  bg-white text-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Registration Form</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-lg-6 m-auto">
+                                <form action="#" class="form-group">
+                                    <div class="my-2">
+                                        <label for="name">First Name</label>
+                                        <input type="text" class="form-control" placeholder="Enter Your First Name">
+                                    </div>
+                                    <div class="my-2">
+                                        <label for="name">Last Name</label>
+                                        <input type="text" class="form-control" placeholder="Enter Your Last Name">
+                                    </div>
+                                    <div class="my-2">
+                                        <label for="name">Phone Number</label>
+                                        <input type="number" class="form-control" placeholder="Enter Your P-Number">
+                                    </div>
+                                    <div class="my-2">
+                                        <label for="name">E-mail</label>
+                                        <input type="email" class="form-control" placeholder="Enter Your email">
+                                    </div>
+                                    <div class="my-2">
+                                        <label for="name">Password</label>
+                                        <input type="password" class="form-control" placeholder="Enter Your password">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-5">
+            <div class="container">
+                <div class="student-text col-lg-6">
+                    <h1>Meet Our Successfull
+                        Students</h1>
+                    <small class="">It is a long established fact that a reader will be distracted by the
+                        readable content of a page when looking at its layout.</small>
+                </div>
+                <div class="row my-5 g-3">
+                    <div class=" col-lg-3 col-md-6">
+                        <div class="students-items rounded shadow-lg">
+                            <div class="students-img">
+                                <img src="images/student/student-1.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="student-text p-3">
+                                <h4>Md Hasan</h4>
+                                <p class="text-black-50">Web Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-3 col-md-6">
+                        <div class="students-items rounded shadow-lg">
+                            <div class="students-img">
+                                <img src="images/student/student-2.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="student-text p-3">
+                                <h4>Nusrat jahan Riya</h4>
+                                <p class="text-black-50">Ux/Ui Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-3 col-md-6">
+                        <div class="students-items rounded shadow-lg">
+                            <div class="students-img">
+                                <img src="images/student/student-3.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="student-text p-3">
+                                <h4>Jahidul Islam</h4>
+                                <p class="text-black-50">Motion Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-3 col-md-6">
+                        <div class="students-items rounded shadow-lg">
+                            <div class="students-img">
+                                <img src="images/student/student-4.png" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="student-text p-3">
+                                <h4>Adah Mariom</h4>
+                                <p class="text-black-50">Graphics Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="student-btn text-center">
+                    <a href="#" class="btn btn-primary ">View All</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="d-lg-none d-md-block d-sm-block">
+            <div class="container">
+                <div class="feedback-text col-lg-5 m-auto text-center pb-5">
+                    <h2>Some Students Feedback</h2>
+                    <small class="text-black-50 fw-light py-3">It is a long established fact that a reader will be
+                        dist
+                        racted by the readable
+                        content of a page when looking at its layout.</small>
+                </div>
+                <div class="row g-3">
+                    <div class="col-lg-6">
+                        <div class="feedback-item p-3 shadow-lg rounded border">
+                            <div class="rating d-flex justify-content-between">
+                                <img src="images/comma.png" alt="">
+                                <div class="text-warning">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                            </div>
+                            <small class="text-black-50 lh-sm py-3">
+                                There are many variations of passages of Lorem Ipsum available, but
+                                the majority have suffered alteration in some form, by injected
+                                humour, or randomised words which don't look even slightly
+                                believable. If you are going to use a passage of Lorem.
+                            </small>
+                            <div class="py-3 d-flex">
+                                <img src="images/student/student-1.png" class="rounded-circle" height="50px"
+                                    width="50px" alt="">
+                                <div class="comma">
+                                    <h5>Md Hasan</h5>
+                                    <small class="text-black-50">Web Developer</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="feedback-item p-3 shadow-lg rounded border">
+                            <div class="rating d-flex justify-content-between">
+                                <img src="images/comma.png" alt="">
+                                <div class="text-warning">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                            </div>
+                            <small class="text-black-50 lh-sm">
+                                There are many variations of passages of Lorem Ipsum available, but
+                                the majority have suffered alteration in some form, by injected
+                                humour, or randomised words which don't look even slightly
+                                believable. If you are going to use a passage of Lorem.
+                            </small>
+                            <div class="py-3 d-flex">
+                                <img src="images/student/student-2.png" class="rounded-circle" height="50px"
+                                    width="50px" alt="">
+                                <div class="comma">
+                                    <h5>Nusrat jahan</h5>
+                                    <small class="text-black-50">Motion Designer</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedbackbtn text-center" >
+                    <a href="#" class="btn btn-primary mt-3">View All</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5 pb-3">
+            <div class="container mt-5">
+                <div class="feedback-text col-lg-5 m-auto text-center">
+                    <h2 class="">Frequently Asked Questions</h2>
+                    <small class="text-black-50 fw-light py-3">It is a long established fact that a reader will be dist
+                        racted by the readable
+                        content of a page when looking at its layout.</small>
+                </div>
+                <div class="col-lg-6 col-md-12 m-auto">
+                    <div class="frequently-q my-5 shadow-lg">
+
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="fw-bold accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Difference Between Flexbox and Grid
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Grid and flexbox. The basic difference between CSS Grid Layout and CSS Flexbox
+                                        Layout is that flexbox was designed for layout in one dimension - either a row
+                                        or a column. Grid was designed for two-dimensional layout - rows, and columns at
+                                        the same time.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="fw-bold accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                        aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        Difference Between Bootstrap and Tailwind
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Bootstrap comes with a set of pre-styled responsive,
+                                        mobile-first components that possess a definite UI kit. Tailwind CSS uses a set
+                                        of utility classes to create a neat UI with more flexibility and uniqueness.
+                                        Sites created using Bootstrap follow the generic pattern that makes them look
+                                        identical.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="fw-bold accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                        aria-expanded="false" aria-controls="flush-collapseThree">
+                                        What is css Box Model?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">In CSS, the term "box model" is used when talking about
+                                        design and layout. The CSS box model is essentially a box that wraps around
+                                        every HTML element.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                    <button class="fw-bold accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                        aria-expanded="false" aria-controls="flush-collapseFour">
+                                        What are semantic tags in HTML?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">The HTML semantics refers to the tags that provide
+                                        meaning to an HTML page rather than just presentation. It makes HTML more
+                                        comprehensible by better defining the different sections and layout of web
+                                        pages.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5 d-lg-block d-none">
+            <div class="container">
+                <div class="col-lg-7 m-auto text-center">
+                    <h2 class="fw-bold">Trusted by over 800+ companies</h2>
+                </div>
+                <div class="row my-5 d-flex justify-content-center align-items-center">
+                    <div class="col-lg-2">
+                        <div class="company-logo">
+                            <img src="images/company/company-1.png" class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="company-logo">
+                            <img src="images/company/company-2.png" class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="company-logo">
+                            <img src="images/company/company-3.png" class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="company-logo">
+                            <img src="images/company/company-4.png" class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="company-logo">
+                            <img src="images/company/company-5.png" class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="company-logo">
+                            <img src="images/company/company-6.png" class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
